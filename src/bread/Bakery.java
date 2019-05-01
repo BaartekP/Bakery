@@ -10,11 +10,14 @@ public class Bakery {
 		
 		Scanner scan = new Scanner(System.in);
 		String s = scan.next();
-		//int i = scan.nextInt();
+		scan.close();
 		
-		System.out.println(s + ", How I can help you?");
+		System.out.println(s + ", Please welcome");
 		
+		Order order1 = new Order();
+		order1._chooseTab();
 		
+		System.out.printf("%s , You need to pay %.2f z³",s,order1.payment());
 		
 		
 		
