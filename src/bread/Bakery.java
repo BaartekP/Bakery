@@ -17,7 +17,7 @@ public class Bakery {
 		Order order1 = new Order();
 		
 		
-		
+		System.out.println("Thank you for visiting us "+s+", see you next time");
 		
 	}
 
