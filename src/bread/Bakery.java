@@ -8,6 +8,8 @@ public class Bakery {
 		System.out.println("Hello Customer! \nWhat are you looking for?");
 		
 		
+		Order order1 = new Order();
+		
 		
 		
 		
