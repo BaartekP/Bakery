@@ -13,17 +13,16 @@ public class Bakery {
 		scan.close();
 		
 		System.out.println(s + ", Please welcome");
+
 		
 		Order order1 = new Order();
 		order1._chooseTab();
 		
 		System.out.printf("%s , You need to pay %.2f z³",s,order1.payment());
 		
-		
-		
-		
-		
-		
+	
+		System.out.println("Thank you for visiting us "+s+", see you next time");
+
 		
 	}
 
