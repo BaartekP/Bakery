@@ -25,7 +25,7 @@ public class Order
 			
 			System.out.println("How many?");
 			s = scan.nextInt();
-			choose[temp] = s;
+			choose[temp] = s-1;
 			
 			System.out.println("Do you want to exit?\n"
 					+ "0. No\n"
