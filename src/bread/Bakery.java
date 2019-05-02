@@ -17,7 +17,7 @@ public class Bakery {
 		Order order1 = new Order();
 		order1._chooseTab();
 		
-		System.out.printf("%s , You need to pay %.2f z³",s,order1.payment());	
+		System.out.printf("You need to pay %.2f z³\n",order1.payment());	
 		System.out.println("Thank you for visiting us "+s+", see you next time");
 		scan.close();
 		
