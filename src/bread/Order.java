@@ -13,19 +13,14 @@ public class Order
 		int temp;
 		Scanner scan = new Scanner(System.in);
 		do {
-			System.out.println("What you want to buy?\n"
-					+ "1. Bread\n"
-					+ "2. Roll\n"
-					+ "3. Bun\n"
-					+ "4. Flour\n"
-					+ "5. Poppy seed");
-			//Scanner scan = new Scanner(System.in);
+			
+			question();
 			int s = scan.nextInt();
 			temp = s;
 			
 			System.out.println("How many?");
 			s = scan.nextInt();
-			choose[temp] = s-1;
+			choose[temp-1] = s;
 			
 			System.out.println("Do you want to exit?\n"
 					+ "0. No\n"
@@ -45,6 +40,15 @@ public class Order
 			summ += choose[i] * prices[i];
 		}
 		return summ;		
+	}
+	
+	public void question() {
+		System.out.println("What do you want to buy?\n"
+				+ "1. Bread\n"
+				+ "2. Roll\n"
+				+ "3. Bun\n"
+				+ "4. Flour\n"
+				+ "5. Poppy seed");
 	}
 	
 	
